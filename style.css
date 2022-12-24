@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
     box-sizing: border-box;
 }
 
@@ -26,14 +30,24 @@ body {
 }
 
 nav {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #26262631;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
 }
 
 .logo {
-    width: 140px;
+    width: 120px;
+    margin-left: 20px;
 }
 
 nav ul li {
@@ -46,7 +60,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
 }
 
@@ -83,12 +97,15 @@ nav ul li a:hover::after {
 }
 
 #ind {
-    font-size: 70px;
+    font-size: 77px;
     font-weight: 700;
     color: #d900ff;
+    text-decoration: none;
+
+
 }
 
-/* <!-- -------------------About-------------------- --> */
+/* <!-- -------------------About me -------------------- --> */
 
 #about {
     padding: 80px 0;
@@ -120,7 +137,11 @@ nav ul li a:hover::after {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
-    
+
+}
+
+.about-col-2 p {
+    font-size: 22px;
 }
 
 .tab-title {
@@ -131,7 +152,7 @@ nav ul li a:hover::after {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -159,7 +180,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: #9a3656;
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .tab-contents {
@@ -185,7 +206,7 @@ nav ul li a:hover::after {
 .services-list div {
     background: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 22px;
     font-weight: 300;
     border-right: 10px;
     border-radius: 15px;
@@ -215,7 +236,8 @@ nav ul li a:hover::after {
     background: #d900ff;
     transform: translateY(-10px);
 }
-.btnserve{
+
+.btnserve {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -224,6 +246,13 @@ nav ul li a:hover::after {
     border-radius: 60px;
     text-decoration: none;
     color: #fff;
+    
+    
+}
+.btnserve:hover{
+    background-color: #fff;
+    border: none;
+    color: #d900ff;
 }
 
 /* ---------------------------portfolio------------------- */
@@ -321,7 +350,8 @@ nav ul li a:hover::after {
 .contact-right {
     flex-basis: 60%;
 }
-.contact-left h1{
+
+.contact-left h1 {
     font-size: 40px;
 }
 
@@ -368,10 +398,12 @@ form button {
     width: 100%;
 
 }
-.mail{
+
+.mail {
     margin-top: 16px;
 }
-.mail a{
+
+.mail a {
     text-decoration: none;
     color: aliceblue;
     font-size: 16px;
@@ -379,7 +411,7 @@ form button {
 
 .mail i {
     color: #d900ff;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 
@@ -428,12 +460,14 @@ nav .fas {
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url(images/phone\ header.jpg.png);
+
     }
 
     .header-text {
         margin-top: 100%;
         font-size: 16px;
     }
+
     .logo {
         width: 100px;
     }
